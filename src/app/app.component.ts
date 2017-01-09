@@ -2,6 +2,9 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
+
+
+
 import { Page1 } from '../pages/home/page1';
 import { Page2 } from '../pages/list/page2';
 import { CheckboxPage } from '../pages/checkbox/checkbox';
