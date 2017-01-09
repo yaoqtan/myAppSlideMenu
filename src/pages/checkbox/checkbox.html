@@ -1,0 +1,167 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Component</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="getting-started">
+  
+<input type="text" name="">
+<select>
+  <option>q</option>
+   <option>2</option>
+</select>
+
+<ion-scroll scrollY = "true" scrollX="true">
+  <div class="map-div">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+  </div>
+</ion-scroll>
+
+<div showWhen="android">
+ I am visible on Android!
+</div>
+
+<div showWhen="ios">
+ I am visible on iOS!
+</div>
+
+<div showWhen="android,ios">
+ I am visible on Android and iOS!
+</div>
+
+<div showWhen="portrait">
+ I am visible on Portrait!
+</div>
+
+<div showWhen="landscape">
+ I am visible on Landscape!
+</div>
+
+
+ <ion-list>
+    <ion-list-header>
+      Characters
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Jon Snow</ion-label>
+      <ion-checkbox checked="true"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Daenerys Targaryen</ion-label>
+      <ion-checkbox color="dark" checked="true"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Arya Stark</ion-label>
+      <ion-checkbox value="cherry" disabled="true"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Tyrion Lannister</ion-label>
+      <ion-checkbox color="secondary"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Sansa Stark</ion-label>
+      <ion-checkbox color="danger" checked="true"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Khal Drogo</ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Cersei Lannister</ion-label>
+      <ion-checkbox color="energized" checked="true" color="dark"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Stannis Baratheon</ion-label>
+      <ion-checkbox color="royal" checked="true"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Petyr Baelish</ion-label>
+      <ion-checkbox disabled="true"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Hodor</ion-label>
+      <ion-checkbox color="dark" checked="true"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Catelyn Stark</ion-label>
+      <ion-checkbox color="secondary" checked="true"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Bronn</ion-label>
+      <ion-checkbox color="royal"></ion-checkbox>
+    </ion-item>
+
+
+  </ion-list>
+
+<ion-list>
+  <ion-item>
+    <ion-label>Start Time</ion-label>
+    <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
+  </ion-item>
+</ion-list>
+
+<ion-list>
+  <ion-item>
+    <ion-label color="primary">Inline Label</ion-label>
+    <ion-input placeholder="Text Input"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary" fixed>Fixed Label</ion-label>
+    <ion-input type="tel" placeholder="Tel Input"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="number" placeholder="Number Input with no label"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary" stacked>Stacked Label</ion-label>
+    <ion-input type="email" placeholder="Email Input"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary" stacked>Stacked Label</ion-label>
+    <ion-input type="password" placeholder="Password Input"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary" floating>Floating Label</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input placeholder="Clear Input" clearInput></ion-input>
+  </ion-item>
+</ion-list>
+
+<ion-item>
+  <ion-label>Gender</ion-label>
+  <ion-select [(ngModel)]="gender">
+    <ion-option *ngFor = "let gender of genders" value="{{gender.value}}" >{{gender.name}}</ion-option>
+    <!-- <ion-option value="m">Male</ion-option> -->
+  </ion-select>
+</ion-item>
+
+
+</ion-content>
