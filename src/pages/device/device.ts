@@ -13,17 +13,17 @@ export class DevicePage {
 	PackageName=AppVersion.getPackageName();
 	VersionCode = AppVersion.getVersionCode();
 	VersionNumber = AppVersion.getVersionNumber();
-  deviceUuid = Device.device.uuid;
-  deviceModel = Device.device.model;
-  deviceCordova = Device.device.cordova;
-  devicePlatform = Device.device.platform;
-  deviceVersion = Device.device.version;
-  deviceManufacturer = Device.device.manufacturer;
-  deviceIsVirtual = Device.device.isVirtual;
-  deviceSerial = Device.device.serial;
+  deviceUuid = Device.uuid;
+  deviceModel = Device.model;
+  deviceCordova = Device.cordova;
+  devicePlatform = Device.platform;
+  deviceVersion = Device.version;
+  deviceManufacturer = Device.manufacturer;
+  deviceIsVirtual = Device.isVirtual;
+  deviceSerial = Device.serial;
 	constructor(public navCtrl: NavController) {
-		console.log(Device.device.uuid);
-		console.log(Device.device.uuid);
+		console.log(Device.uuid);
+		console.log(Device.uuid);
 		console.log(this.appName);
 	}
 
